@@ -4,7 +4,7 @@ const cors = require('cors');
 class Server{
   constructor() { //definimos las propiedades
     this.app =express();//cada vez q se lance una instancia de mi servidor creo la app de expres
-    this.port = process.env.PORT;
+    this.port = process.env.PORT || 3000;
     this.usuariosPath = '/api/usuarios';
 
     //Middlewares : funciones q añaden funcionalidad a mi webserver
